@@ -15,6 +15,21 @@
   <link rel="shortcut icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
 {%- endif -%}
 
+
+
+{#- Ushio-JS -#}
+{%- if theme.ushio -%}
+  {%- include "./_head/ushio.swig" -%}
+{%- else -%}
+  <script type="text/javascript" src="{{ url_for('lib/jquery/jquery.min.js') }}"></script>
+{%- endif -%}
+
+{#- iziModal -#}
+<link rel="stylesheet" type="text/css" href="{{ url_for('lib/iziModal/iziModal.min.css') }}" />
+
+{#- iziToast -#}
+<link rel="stylesheet" type="text/css" href="{{ url_for('lib/iziToast/iziToast.min.css') }}" />
+
 {#- Canonical, good for google search engine -#}
 <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
 

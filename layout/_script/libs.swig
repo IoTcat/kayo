@@ -4,10 +4,11 @@
 
 {%-
   set js_libs = {
-    jquery: 'jquery/jquery.min.js',
     slideout: 'slideout/slideout.js',
     fancybox: fancybox_js,
     nprogress: nprogress_js,
+    iziToast: 'iziToast/iziToast.min.js',
+    iziModal: 'iziModal/iziModal.min.js',
   }
 -%}
 

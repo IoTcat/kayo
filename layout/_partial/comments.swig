@@ -15,6 +15,8 @@
       <div id="gitalk-container"></div>
     {%- elif theme.utterances.enable -%}
       <div id="utterances-container"></div>
+    {%- elif theme.valine.enable -%}
+      <div id="vcomments"></div>
     {%- endif -%}
   </div>
 {%- endif -%}

@@ -32,6 +32,11 @@
 
     {%- include '_script/comments.swig' -%}
 
+    {#- Ushio-JS -#}
+    {%- if theme.ushio -%}
+        {%- include '_script/ushio.swig' -%}
+    {%- endif -%}
+
     {%- include '_script/libs.swig' -%}
     {%- include '_script/theme.swig' -%}
   </body>
