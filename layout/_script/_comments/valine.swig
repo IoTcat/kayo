@@ -56,6 +56,7 @@ img.vimg:hover {
       metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）"},
       placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
       enableQQ: true,
+      visitor: true,
       emojiCDN: '//i0.hdslb.com/bfs/emote/',
       emojiMaps: {
         "tv_doge": "6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png",

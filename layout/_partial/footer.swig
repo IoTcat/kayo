@@ -2,6 +2,16 @@
 {%- include "./_footer/social.swig" -%}
 
 <div class="copyright">
+
+  {%- if theme.valine.statistic and not is_home() -%}
+  <span id="/{{ page.path }}" class="statistic leancloud_visitors">
+    <em>Visitors </em> <i class="leancloud-visitors-count">??</i> 
+    <span class="division"> |</span>
+    <em>Reading </em> {{ readingTime(page.content, 'min', 150) }}
+  </span>
+  <br>
+  {%- endif -%}
+
   <span class="power-by">
     {{ __('footer.powered', '<a class="hexo-link" href="https://hexo.io/">Hexo</a>') }}
   </span>

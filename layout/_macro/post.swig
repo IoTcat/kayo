@@ -20,14 +20,7 @@
             {%- endfor -%}
           </span>
         {%- endif -%}
-        {%- if theme.leancloud.app_id and theme.leancloud.app_key -%}
-        <span class="post-visits"
-             data-url="{{ url_for(post.path) }}"
-             data-title="{{ post.title }}">
-          {{ __('posts.visits') }} 0
-        </span>
-        {%- endif -%}
-      </div>
+     </div>
     </header>
 
     {#- Post TOC -#}
