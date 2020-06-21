@@ -5,6 +5,7 @@
 ```bash
 $ npm install hexo-renderer-scss --save
 $ npm install hexo-reading-time --save
+$ npm install hexo-generator-feed --save
 $ git clone https://github.com/iotcat/kayo themes/kayo
 $ cp themes/kayo/_config.yml.example themes/kayo/_config.yml
 ```
