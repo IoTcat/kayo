@@ -8,7 +8,7 @@
   Kayo.prototype.setup = function() {
     var leancloud = this.config.leancloud;
 
-    this.navbar();
+    //this.navbar();
     this.responsiveTable();
 
     if (this.config.toc) {

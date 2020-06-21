@@ -3,13 +3,15 @@
 
 <div class="copyright">
 
-  {%- if theme.valine.statistic and not is_home() -%}
+  {%- if theme.valine.statistic -%}
+    {%- if is_post() or is_page() -%}
   <span id="/{{ page.path }}" class="statistic leancloud_visitors">
     <em>Visitors </em> <i class="leancloud-visitors-count">??</i> 
     <span class="division"> |</span>
     <em>Reading </em> {{ readingTime(page.content, 'min', 150) }}
   </span>
   <br>
+  {%- endif -%}
   {%- endif -%}
 
   <span class="power-by">

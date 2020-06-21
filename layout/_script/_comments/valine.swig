@@ -46,6 +46,7 @@ img.vimg:hover {
 
 </style>
 <script>
+pjax_valine = () => {
     new Valine({
       el: '#vcomments',
       appId: '{{ theme.valine.appId }}',
@@ -112,6 +113,7 @@ img.vimg:hover {
           // ... 更多表情
       } 
     });
+};
 </script>
 
 {%- endif -%}

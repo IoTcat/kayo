@@ -7,6 +7,9 @@
     <span></span>
     <span></span>
   </div>
+  <div class="loading-bar">
+    <div class="progress"></div>
+  </div>
 </div>
 
 <nav id="mobile-menu" class="mobile-menu slideout-menu">

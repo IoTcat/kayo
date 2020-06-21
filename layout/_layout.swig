@@ -22,6 +22,12 @@
       </main>
 
       <footer id="footer" class="footer">
+      <script>
+        page_obj = {
+          layout: "{{ page.layout }}",
+          comments: "{{ page.comments }}"
+        };
+      </script>
         {%- include '_partial/footer.swig' -%}
       </footer>
 
@@ -40,5 +46,6 @@
     {%- include '_script/libs.swig' -%}
     {%- include '_script/theme.swig' -%}
     {%- include '_script/aplayer.swig' -%}
-  </body>
+    {%- include '_script/pjax.swig' -%}
+ </body>
 </html>
