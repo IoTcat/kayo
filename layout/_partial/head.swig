@@ -30,6 +30,14 @@
 {#- iziToast -#}
 <link rel="stylesheet" type="text/css" href="{{ url_for('lib/iziToast/iziToast.min.css') }}" />
 
+{#- aplayer -#}
+{%- if theme.aplayer.enable -%}
+  <script>
+    if(window.screen.width < 600) document.write('<link rel="stylesheet" href="https://cdn.yimian.xyz/ushio-js/ushio-js.mobile.min.css">');
+    else document.write('<link rel="stylesheet" href="https://cdn.yimian.xyz/ushio-js/ushio-js.min.css">');
+  </script>
+{%- endif -%}
+
 {#- Canonical, good for google search engine -#}
 <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
 
