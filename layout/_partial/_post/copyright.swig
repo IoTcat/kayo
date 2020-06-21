@@ -3,7 +3,7 @@
   <div class="post-copyright">
     <p class="copyright-item">
       <span>{{ __('copyright.author') + ': ' }}</span>
-      <a href="{{ config.url }}">{{ config.author }}</a>
+      <a href="{{ theme.copyright.authorUrl }}">{{ config.author }}</a>
     </p>
     <p class="copyright-item">
       <span>{{ __('copyright.link') + ': ' }}</span>

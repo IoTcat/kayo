@@ -38,6 +38,10 @@
   </script>
 {%- endif -%}
 
+{%- if theme.shaky -%}
+  <link rel="stylesheet" type="text/css" href="https://cdn.yimian.xyz/shaky/shaky.css"> 
+{%- endif -%}
+
 {#- Canonical, good for google search engine -#}
 <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
 

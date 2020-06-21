@@ -20,7 +20,7 @@
       {{ current }}
     {%- endif -%} 
 
-    <span class="heart">
+    <span class="heart shaky">
       <i class="iconfont icon-heart"></i>
     </span>
     <span class="author">{{ config.author }}</span>
