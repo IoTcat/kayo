@@ -34,7 +34,10 @@
                 	['<button><b>{{ subname }}</b></button>', function (instance, toast) {
 			 
 			            instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');
-			 			pjax.loadUrl("{{ url_for(theme.menu[name].submenus[subname].path) }}");
+                        if("{{ url_for(theme.menu[name].submenus[subname].pjax) }}" == "true")
+			 			  pjax.loadUrl("{{ url_for(theme.menu[name].submenus[subname].path) }}");
+                        else
+                            window.open("{{ theme.menu[name].submenus[subname].path }}");
 			        }, true],
 			    {%- endfor -%}
 			    ['<button><b>close</b></button>', function (instance, toast) {
