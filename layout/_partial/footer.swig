@@ -4,7 +4,7 @@
 <div class="copyright">
 
   {%- if theme.valine.statistic -%}
-    {%- if is_post() or is_page() -%}
+    {%- if is_post() -%}
   <span id="/{{ page.path }}" class="statistic leancloud_visitors">
     <em>Visitors </em> <i class="leancloud-visitors-count">??</i> 
     <span class="division"> |</span>

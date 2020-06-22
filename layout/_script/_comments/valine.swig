@@ -1,6 +1,6 @@
 {%- if theme.valine.enable -%}
 {% set valine_js_url = '//cdn.jsdelivr.net/gh/HCLonely/Valine@1.4.14/dist/Valine.min.js' %}
-<script src="{{ valine_js_url }}"></script>
+<script src="{{ valine_js_url }}" data-pjax></script>
 <style>
 /* 背景图片 */
 #veditor {
@@ -56,6 +56,7 @@ pjax_valine = () => {
       friends:  [{{ theme.valine.friendsEmailMd5 }}],  //小伙伴邮箱Md5
       metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）"},
       placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
+      path: window.location.pathname,
       enableQQ: true,
       visitor: true,
       emojiCDN: '//i0.hdslb.com/bfs/emote/',
