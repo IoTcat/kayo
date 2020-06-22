@@ -1,7 +1,7 @@
 {%- if theme.pjax.enable -%}
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.js"></script>
 <script>
-  new Pjax({
+  window.pjax = new Pjax({
     elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"])',
     selectors: ["head title, #main", "#footer"],
   });
