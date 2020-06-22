@@ -1,11 +1,11 @@
-{%- if theme.pjax.enable -%}
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.js"></script>
 <script>
+{%- if theme.pjax.enable -%}
   window.pjax = new Pjax({
     elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"])',
     selectors: ["head title, #main", "#footer"],
   });
-
+{%- endif -%}
 
   /* 第一次载入页面加载的函数 */
   pjax_ini = () => {
@@ -21,12 +21,17 @@
      {%- if theme.google_analytics -%}
        pjax_google_analytics();
      {%- endif -%}
+
+     {%- if theme.mermaid -%}
+       mermaid.init(undefined, $(".mermaid"));
+     {%-endif-%}
   };
 
   /* 第一次 执行 */
   pjax_ini();
 
 
+{%- if theme.pjax.enable -%}
   {%- if theme.pjax.loadingbar -%}
     {%- include "loading-bar.swig" -%}
   {%- endif -%}
@@ -59,5 +64,5 @@
     
   });
 
-</script>
 {%- endif -%}
+</script>

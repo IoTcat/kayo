@@ -1,6 +1,9 @@
 {%- if theme.fancybox -%}
   {%- set fancybox_js = 'fancybox/jquery.fancybox.pack.js' -%}
 {%- endif -%}
+{%- if theme.mermaid -%}
+  {%- set mermaid_js = 'mermaid/mermaid.min.js' -%}
+{%- endif -%}
 
 {%-
   set js_libs = {
@@ -9,6 +12,7 @@
     nprogress: nprogress_js,
     iziToast: 'iziToast/iziToast.min.js',
     iziModal: 'iziModal/iziModal.min.js',
+    mermaid: mermaid_js,
   }
 -%}
 
