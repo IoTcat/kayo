@@ -1,4 +1,4 @@
-<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.js"></script>
+<script src="{{ theme.cdnurl }}/lib/pjax/pjax.min.js"></script>
 <script>
 {%- if theme.pjax.enable -%}
   window.pjax = new Pjax({

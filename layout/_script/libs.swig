@@ -18,6 +18,6 @@
 
 {%- for lib in js_libs -%}
   {%- if lib -%}
-    <script type="text/javascript" src="{{ url_for('lib') }}/{{ lib }}"></script>
+    <script type="text/javascript" src="{{ theme.cdnurl }}/lib/{{ lib }}"></script>
   {%- endif -%}
 {%- endfor -%}

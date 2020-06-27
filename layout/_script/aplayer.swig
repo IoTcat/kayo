@@ -1,6 +1,6 @@
 {%- if theme.aplayer.enable -%}
 {% set aplayer_js_url = '/lib/aplayer/aplayer.min.js' %}
-<script src="{{ aplayer_js_url }}"></script>
+<script src="{{ theme.cdnurl }}{{ aplayer_js_url }}"></script>
 
 <script>
 	$.post("{{ theme.aplayer.api }}?type=playlist&id={{ theme.aplayer.playlist }}&limit={{ theme.aplayer.limit }}&random={{ theme.aplayer.random }}", function(res){

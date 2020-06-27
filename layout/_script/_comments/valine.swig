@@ -1,6 +1,6 @@
 {%- if theme.valine.enable -%}
-{% set valine_js_url = '//cdn.jsdelivr.net/gh/HCLonely/Valine@1.4.14/dist/Valine.min.js' %}
-<script src="{{ valine_js_url }}" data-pjax></script>
+{% set valine_js_url = '/lib/valine/valine.min.js' %}
+<script src="{{ theme.cdnurl }}{{ valine_js_url }}" data-pjax></script>
 <style>
 /* 背景图片 */
 #veditor {

@@ -21,14 +21,14 @@
 {%- if theme.ushio -%}
   {%- include "./_head/ushio.swig" -%}
 {%- else -%}
-  <script type="text/javascript" src="{{ url_for('lib/jquery/jquery.min.js') }}"></script>
+  <script type="text/javascript" src="{{ theme.cdnurl }}/lib/jquery/jquery.min.js"></script>
 {%- endif -%}
 
 {#- iziModal -#}
-<link rel="stylesheet" type="text/css" href="{{ url_for('lib/iziModal/iziModal.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/lib/iziModal/iziModal.min.css" />
 
 {#- iziToast -#}
-<link rel="stylesheet" type="text/css" href="{{ url_for('lib/iziToast/iziToast.min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/lib/iziToast/iziToast.min.css" />
 
 {#- aplayer -#}
 {%- if theme.aplayer.enable -%}
@@ -47,7 +47,7 @@
 
 {#- Fancybox styling -#}
 {%- if theme.fancybox -%}
-  <link rel="stylesheet" type="text/css" href="{{ url_for('lib/fancybox/jquery.fancybox.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/lib/fancybox/jquery.fancybox.css" />
 {%- endif -%}
 
 {#- MathJax (LaTeX) support -#}
@@ -59,7 +59,7 @@
 {%- endif -%}
 
 {#- Theme styling -#}
-<link rel="stylesheet" type="text/css" href="{{ url_for('css/style.css') }}?v={{ theme.version }}" />
+<link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/css/style.css?v={{ theme.version }}" />
 
 {#- Analytics and push -#}
 {%- if not env.debug -%}
