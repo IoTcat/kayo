@@ -1,5 +1,10 @@
 # Kayo主题
 
+> 努力开发中~~~
+
+源自[ahonn/hexo-theme-even](https://github.com/ahonn/hexo-theme-even)主题
+
+
 ## Installation
 
 ```bash
@@ -25,3 +30,16 @@ You can update to latest master branch by the following command:
 $ cd themes/kayo
 $ git pull
 ```
+
+
+## 新增功能
+ - 支持多级菜单
+ - 支持mermaid绘图
+ - 支持显示文章预计reading时长
+ - 添加版权底部心跳
+ - 支持cdn以及自定义cdn地址
+ - 支持aplayer播放网易云歌单
+ - 支持valine无后端评论
+ - 支持valine的访客数量统计
+ 
+ 
