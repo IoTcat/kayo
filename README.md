@@ -33,7 +33,7 @@ $ git pull
 
 
 ## 新增功能
- - 支持pjax
+ - 支持pjax无刷新换页
  - 支持多级菜单
  - 支持mermaid绘图
  - 支持显示文章预计reading时长
