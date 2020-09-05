@@ -17,6 +17,7 @@ rss: default
 # Menu Settings
 # ===========================================
 menu:
+  Home: {path: /, zh: '主页'}
   Archives: {path: /archives/, zh: '归档'}
   Categories: {path: /categories/, zh: '分类'}
   Projects: {path: '#', zh: '项目', submenus: {fp: { path: https://fp.yimian.xyz/, zh: 'fp'}, wiot: {path: https://wiot.yimian.xyz/, zh: 'wiot'}}}
