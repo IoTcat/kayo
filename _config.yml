@@ -22,7 +22,7 @@ menu:
   Categories: {path: /categories/, zh: '分类'}
   Projects: {path: '#', zh: '项目', submenus: {fp: { path: https://fp.yimian.xyz/, zh: 'fp'}, wiot: {path: https://wiot.yimian.xyz/, zh: 'wiot'}}}
   Map: {path: '#', zh: '导航', submenus: {APIs: {path: https://api.yimian.xyz/, zh: '接口'}, Imgs: {path: https://img.yimian.xyz/, zh: '图库'}, Imgbed: {https://imgbed.yimian.xyz/, zh: '图床'}, Fileshare: {path: https://share.yimian.xyz/, zh: '文件分享'}, Monitor: {path: https://monitor.yimian.xyz/, zh: '监控'}, ACG.WATCH: {path: https://acg.watch/, zh: '视频'}, Oneindex: {path: https://onedrive.yimian.xyz/, zh: '网盘'}, Proxy: {path: https://proxy.yimian.xyz/, zh: '下载代理'}, ShortenURL: {path: https://shorturl.yimian.xyz/, zh: '短链'}}}
-  About: {path: '#', zh: '关于', submenus: {links: {path: /links/, pjax: true}, Me: {path: https://iotcat.me/}}}
+  About: {path: '#', zh: '关于', submenus: {links: {path: /links/, zh: '友链', pjax: true}, Me: {path: https://iotcat.me/, zh: '关于我'}}}
 
 # ===========================================
 # Theme Settings
