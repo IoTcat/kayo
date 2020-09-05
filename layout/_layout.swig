@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
   <head>
-    {%- include '_partial/head.swig' %}
     <title>{%- block title -%}{%- endblock -%}</title>
+    {%- include '_partial/head.swig' %}
   </head>
 
   <body>

@@ -18,13 +18,13 @@
     {%- if page.prev.path -%}
       <a class="prev" href="{{ url_for(page.prev.path) }}">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">{{ page.prev.title }}</span>
+        <span class="prev-text nav-default"><span class=".zh">{{ page.prev.title }}</span><span class=".en">{{ page.prev.titleEN }}</span></span>
         <span class="prev-text nav-mobile">{{ __('posts.prev_post') }}</span>
       </a>
     {%- endif -%}
     {%- if page.next.path -%}
       <a class="next" href="{{ url_for(page.next.path) }}">
-        <span class="next-text nav-default">{{ page.next.title }}</span>
+        <span class="next-text nav-default"><span class=".zh">{{ page.next.title }}</span><span class=".en">{{ page.next.titleEN }}</span></span>
         <span class="prev-text nav-mobile">{{ __('posts.next_post') }}</span>
         <i class="iconfont icon-right"></i>
       </a>

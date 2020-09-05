@@ -1,0 +1,183 @@
+# ===========================================
+# Site Information Settings
+# ===========================================
+
+# Site creation time
+since: 2018
+
+# Custom your favicon.ico in `site/source`
+favicon: /favicon.ico
+
+# Set feed link (false | default | your feed link)
+# false: disable
+# default: use `atom.xml`, generator for `hexo-generator-feed`
+rss: default
+
+# ===========================================
+# Menu Settings
+# ===========================================
+menu:
+  Archives: {path: /archives/, zh: '归档'}
+  Categories: {path: /categories/, zh: '分类'}
+  Projects: {path: '#', zh: '项目', submenus: {fp: { path: https://fp.yimian.xyz/, zh: 'fp'}, wiot: {path: https://wiot.yimian.xyz/, zh: 'wiot'}}}
+  Map: {path: '#', zh: '导航', submenus: {APIs: {path: https://api.yimian.xyz/, zh: '接口'}, Imgs: {path: https://img.yimian.xyz/, zh: '图库'}, Imgbed: {https://imgbed.yimian.xyz/, zh: '图床'}, Fileshare: {path: https://share.yimian.xyz/, zh: '文件分享'}, Monitor: {path: https://monitor.yimian.xyz/, zh: '监控'}, ACG.WATCH: {path: https://acg.watch/, zh: '视频'}, Oneindex: {path: https://onedrive.yimian.xyz/, zh: '网盘'}, Proxy: {path: https://proxy.yimian.xyz/, zh: '下载代理'}, ShortenURL: {path: https://shorturl.yimian.xyz/, zh: '短链'}}}
+  About: {path: '#', zh: '关于', submenus: {links: {path: /links/, pjax: true}, Me: {path: https://iotcat.me/}}}
+
+# ===========================================
+# Theme Settings
+# ===========================================
+# color: default | mint green | cobalt blue | hot pink | dark violet
+color: mint green
+
+# default page mode: default | archives
+mode: default
+
+toc: true
+
+# jQuery fancybox
+fancybox: true
+
+# LaTeX support (via MathJax)
+latex: true
+
+# mermaid support
+mermaid: true
+
+# Ushio supprot
+ushio: true
+
+# Post reading time Tips
+readingTime: true
+
+
+copyright:
+  enable: true
+  authorUrl: https://iotcat.me/
+  # https://creativecommons.org/
+  license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
+
+reward:
+  enable: false
+  qrCode:
+    wechat:
+    alipay:
+
+
+# 底部版权心跳
+shaky: true
+
+
+# pjax support
+pjax:
+  enable: true
+  loadingbar: true
+
+
+# cdn support
+cdnurl: https://cdn.yimian.xyz/kayo
+
+# ===========================================
+# Social links Settings
+# ===========================================
+social:
+  email: i@iotcat.me
+  stack-overflow:
+  twitter:
+  facebook:
+  linkedin:
+  google:
+  github: https://github.com/iotcat
+  weibo:
+  zhihu:
+  douban:
+  pocket:
+  tumblr:
+  instagram:
+
+# ===========================================
+# Third Party Services Settings
+# ===========================================
+
+
+# Baidu Analytics
+baidu_analytics:
+# Baidu Verification
+baidu_verification:
+
+# Google Analytics
+google_analytics: UA-169276192-1
+# Google Verification
+google_verification:
+
+# Disqus
+disqus_shortname:
+
+#Changyan
+changyan:
+  appid:
+  appkey:
+
+#LiveRe
+livere_datauid:
+
+
+# aplayer 网易云歌单播放
+aplayer:
+  enable: false
+  playlist: 808097971
+  limit: 14
+  random: true
+  api: https://api.yimian.xyz/msc/
+  autoplay: false
+  loop: all
+  color: #00CBFF
+
+
+# 是否开启dplayer
+dplayer:
+  enable: true
+
+
+
+# Valine Comments
+# 配置邮件提醒参考https://github.com/IoTcat/Valine-Admin
+valine:
+  enable: true
+  appId: eVzpK7EyT6OafJvXWIRminWT-gzGzoHsz 
+  appKey: 2qjuEBgVE0BscTQnTmoS9roU
+  background: https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp
+  masterEmailMd5: 9b616ff4cd6c305e5970bee7b1bd9b1f
+  friendsEmailMd5: '"b6ddef7c7e1c647e7767afeacdfb7b64","46dd4e6fef4f9591736c4723a965ca2e","6132d77f9f0ae060bc733090991acecb","3e00e104b79d7c6e866c6b23c6ba6dfc"'
+  statistic: true
+
+
+# Gitalk
+# Demo: https://gitalk.github.io
+# https://github.com/gitalk/gitalk
+gitalk:
+  enable: false
+  github_id: iotcat
+  repo: eee.dog-comments
+  client_id: 
+  client_secret: 
+  admin_user: iotcat
+  distraction_free_mode: true # Facebook-like distraction free mode
+  # Gitalk's display language depends on user's browser or system environment
+  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+  # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
+  language:
+
+# utterances
+# Docs: https://utteranc.es/
+# Tips: Make sure you have installed [utterances app](https://github.com/apps/utterances) in your repo
+utterances:
+  enable: false
+  repo: owner/repo # Repository
+  issueTerm: title  # Blog post ↔️ issue mapping: pathname | url | title | og:title
+  theme: github-light # Theme: github-light | github-dark | github-dark-orange | icy-dark | dark-blue | photon-dark
+  label: utterances # Issue label
+
+# ===========================================
+# Version
+# ===========================================
+version: 1.0.0

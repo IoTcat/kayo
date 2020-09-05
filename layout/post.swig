@@ -7,11 +7,11 @@
   {{ post_template.render(page) }}
 
   {%- if theme.readingTime -%}
-  <script>$(()=>{setTimeout(()=>{iziToast.show({
+  <script>$(()=>{var p = window.location.pathname;setTimeout(()=>{if(window.location.pathname == p)tips.show({
         title: 'tips',
         position: 'topRight',
-        message: "此文章预计阅读 {{ readingTime(page.content, '分钟', 150) }}哦~"
-  })}, 3000)})</script>
+        message: ((page.tran.getLang() == 'zh')?"此文章预计阅读 {{ readingTime(page.content, '分钟', 300) }}哦~": "Read this page will spend around  {{ readingTime(page.content, ' minutes', 150) }}~")
+  })}, 6000)})</script>
   {%- endif -%}
 {%- endblock -%}
 

@@ -10,16 +10,16 @@
         <a id="menu-{{ name }}" class="menu-item-link" href="{{ url_for(theme.menu[name].path) }}">
           {%- set itemName = __('menu.' + name.toLowerCase()) -%}
           {%- if itemName.startsWith('menu') -%}
-            {{ name }}
+            <span class=".en">{{ name }}</span><span class=".zh">{{ theme.menu[name].zh }}</span>
           {%- else -%}
-            {{ itemName }}
+            <span class=".en">{{ name }}</span><span class=".zh">{{ theme.menu[name].zh }}</span>
           {%- endif -%}
         </a>
 
       {%- if theme.menu[name].submenus -%}
         <script>
           $("#menu-{{ name }}").click(function(){
-            iziToast.question({
+            tips.question({
 			    timeout: 20000,
 			    close: false,
 			    overlay: true,
@@ -31,7 +31,7 @@
 			    position: 'center',
 			    buttons: [
 			    {%- for subname, subobj in theme.menu[name].submenus -%}
-                	['<button><b>{{ subname }}</b></button>', function (instance, toast) {
+                	['<button><b>'+((page.tran.getLang() != 'zh')?'{{ subname }}':'{{ subobj.zh }}')+'</b></button>', function (instance, toast) {
 			 
 			            instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');
                         if("{{ theme.menu[name].submenus[subname].pjax }}" == "true")

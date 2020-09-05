@@ -3,9 +3,9 @@
     <header class="post-header">
       <h1 class="post-title">
         {%- if is_home() -%}
-          <a class="post-link" href="{{ url_for(post.path) }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ url_for(post.path) }}"><span class=".zh">{{ post.title }}</span><span class=".en" hidden>{{ post.titleEN }}</span></a>
         {%- else -%}
-          {{ post.title }}
+          <span class=".zh">{{ post.title }}</span><span class=".en" hidden>{{ post.titleEN }}</span>
         {%- endif -%}
       </h1>
 

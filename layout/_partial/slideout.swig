@@ -20,9 +20,9 @@
         <li class="mobile-menu-item">
           {%- set itemName = __('menu.' + name.toLowerCase()) -%}
           {%- if itemName.startsWith('menu') -%}
-            {{ name }}
+            <span class=".en">{{ name }}</span><span class=".zh">{{ theme.menu[name].zh }}</span>
           {%- else -%}
-            {{ itemName }}
+            <span class=".en">{{ name }}</span><span class=".zh">{{ theme.menu[name].zh }}</span>
           {%- endif -%}
         </li>
       </a>
@@ -31,7 +31,7 @@
           {%- for subname, subobj in theme.menu[name].submenus -%}
             <li>
               <a href="{{ url_for(theme.menu[name].submenus[subname].path) }}">
-                {{ subname }} 
+                <span class=".en">{{ subname }}</span><span class=".zh">{{ subobj.zh }}</span>
               </a>
             </li>
           {%- endfor -%}

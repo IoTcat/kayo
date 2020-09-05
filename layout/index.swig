@@ -9,7 +9,9 @@
   <section id="posts" class="posts">
     {%- if mode == 'default' -%}
       {%- for post in page.posts -%}
-        {{ post_template.render(post) }}
+        {%- if post.display -%}
+            {{ post_template.render(post) }}
+        {%- endif -%}
       {%- endfor -%}
       {%- include "_partial/pagination.swig" -%}
     {%- else -%}

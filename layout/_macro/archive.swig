@@ -44,7 +44,7 @@
         </span>
         <span class="archive-post-title">
           <a href="{{ url_for(post.path) }}" class="archive-post-link">
-            {{ post.title }}
+            <span class=".zh">{{ post.title }}</span><span class=".en">{{ post.titleEN }}</span>
           </a>
         </span>
       </div>

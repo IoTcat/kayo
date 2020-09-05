@@ -15,7 +15,7 @@
   {%- endif -%}
 
   <span class="power-by">
-    {{ __('footer.powered', '<a class="hexo-link" href="https://hexo.io/">Hexo</a>') }}
+    {{ __('footer.powered', '<a class="hexo-link" href="" onClick="page.showUshio(`iotcat/eee.dog-blog`);">Ushio</a>') }}
   </span>
   <span class="division">|</span>
   <span class="theme-info">

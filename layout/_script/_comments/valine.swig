@@ -48,15 +48,28 @@ img.vimg:hover {
 <script>
 pjax_valine = () => {
     $.get('https://auth.yimian.xyz/getEmailHash.php', function(res){
+        if(page.tran.getLang() == 'zh'){
+            var lan = 'zh-CN';
+            var metaPlaceholder = {"nick":"昵称/QQ号","mail":"邮箱（完全保密）"};
+            var tagMeta =  ["博主","小伙伴","访客"];
+            var placeholder = "填写邮箱可以及时收到回复哦(●'◡'●)";
+        }else{
+            var lan = 'en';
+            var metaPlaceholder = {"nick":"Nickname/QQ","mail":"EMail"};
+            var tagMeta =  ["Master","Friend","Visitor"];
+            var placeholder = "Leave some comments here (●'◡'●)";
+        }
         new Valine({
             el: '#vcomments',
             appId: '{{ theme.valine.appId }}',
             appKey: '{{ theme.valine.appKey }}',
             master: '{{ theme.valine.masterEmailMd5 }}',   //博主邮箱md5
-            tagMeta: ["博主","小伙伴","访客"],     //标识字段名
+            tagMeta: tagMeta,     //标识字段名
             friends: res, //[{{ theme.valine.friendsEmailMd5 }}],  //小伙伴邮箱Md5
-            metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱（完全保密）"},
-            placeholder: "填写邮箱可以及时收到回复哦(●'◡'●)",
+
+            metaPlaceholder: metaPlaceholder,
+            placeholder: placeholder,
+            lang: lan,
             path: window.location.pathname,
             enableQQ: true,
             visitor: true,

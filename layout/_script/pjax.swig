@@ -56,6 +56,7 @@
     {%- if theme.pjax.loadingbar -%}
       loadingbarStop();
     {%- endif -%}
+    page.tran.setLang();
   });
 
 
