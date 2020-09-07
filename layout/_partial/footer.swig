@@ -15,7 +15,7 @@
   {%- endif -%}
 
   <span class="power-by">
-    {{ __('footer.powered', '<a class="hexo-link" href="" onClick="page.showUshio();">Ushio</a>') }}
+    {{ __('footer.powered', '<a class="hexo-link" href="https://ushio.cool/">Ushio</a>') }}
   </span>
   <span class="division">|</span>
   <span class="theme-info">
@@ -35,6 +35,6 @@
     <span class="heart shaky">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">{{ config.author }}</span>
+    <span class="author"><a href="https://iotcat.me/">{{ config.author }}</a></span>
   </span>
 </div>
