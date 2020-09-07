@@ -25,10 +25,10 @@
 {%- endif -%}
 
 {#- iziModal -#}
-<link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/lib/iziModal/iziModal.min.css" />
+<!--<link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/lib/iziModal/iziModal.min.css" />-->
 
 {#- iziToast -#}
-<link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/lib/iziToast/iziToast.min.css" />
+<!--<link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/lib/iziToast/iziToast.min.css" />-->
 
 {#- aplayer -#}
 {%- if theme.aplayer.enable -%}
@@ -55,7 +55,7 @@
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
   </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/javascript" async src="https://cdn.yimian.xyz/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 {%- endif -%}
 
 {#- Theme styling -#}
