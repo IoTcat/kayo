@@ -39,7 +39,7 @@
 {%- endif -%}
 
 {%- if theme.shaky -%}
-  <link rel="stylesheet" type="text/css" href="https://cdn.yimian.xyz/shaky/shaky.css"> 
+  <link rel="stylesheet" media="none" onload="this.media='all'" type="text/css" href="https://cdn.yimian.xyz/shaky/shaky.css"> 
 {%- endif -%}
 
 {#- Canonical, good for google search engine -#}
@@ -47,7 +47,7 @@
 
 {#- Fancybox styling -#}
 {%- if theme.fancybox -%}
-  <link rel="stylesheet" type="text/css" href="{{ theme.cdnurl }}/lib/fancybox/jquery.fancybox.css" />
+  <link rel="stylesheet" media="none" onload="this.media='all'" type="text/css" href="{{ theme.cdnurl }}/lib/fancybox/jquery.fancybox.css" />
 {%- endif -%}
 
 {#- MathJax (LaTeX) support -#}
